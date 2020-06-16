@@ -9,7 +9,7 @@ export default {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             },
-            url: 'http://192.168.0.14:3000/api/users/all'
+            url: 'http://localhost:8000/api/users/all'
         })
         .then(response => response.data);
     },
@@ -22,7 +22,7 @@ export default {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             },
-            url: 'http://192.168.0.14:3000/api/users/delete',
+            url: 'http://localhost:8000/api/users/delete',
             data: {
                 users
             }
@@ -37,7 +37,7 @@ export default {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             },
-            url: 'http://192.168.0.14:3000/api/users/update-status',
+            url: 'http://localhost:8000/api/users/update-status',
             data: {
                 users,
                 command

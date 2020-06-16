@@ -5,7 +5,7 @@ export default {
         return axios({
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            url: 'http://192.168.0.14:3000/api/auth/login',
+            url: 'http://localhost:8000/api/auth/login',
             data: {
               email,
               password
@@ -21,7 +21,7 @@ export default {
         return axios({
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            url: 'http://192.168.0.14:3000/api/auth/register',
+            url: 'http://localhost:8000/api/auth/register',
             data: {
               email,
               name,
